@@ -4,7 +4,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), the
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html). A mod states the host version it needs in its
 `mod.xml` (`needs_host`).
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 2026-11-27
 
 The first public version.
 

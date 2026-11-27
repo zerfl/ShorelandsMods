@@ -11,7 +11,7 @@ checks what is in it. Installs nothing, uploads nothing. Needs the .NET SDK and 
 The folder that holds Shorelands.exe, with BepInEx installed. Default: the SHORELANDS_DIR environment variable.
 
 .EXAMPLE
-powershell -ExecutionPolicy Bypass -File tools\package.ps1 -GameDir "C:\Program Files (x86)\Steam\steamapps\common\Shorelands Playtest"
+powershell -ExecutionPolicy Bypass -File tools\release.ps1 -GameDir "C:\Program Files (x86)\Steam\steamapps\common\Shorelands Playtest"
 #>
 param([string]$GameDir = $env:SHORELANDS_DIR)
 
@@ -29,7 +29,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root 'dist'
 $pluginPath = 'BepInEx/plugins/ShorelandsMods'
 
-function Fail([string]$message) { throw "package: $message" }
+function Fail([string]$message) { throw "release: $message" }
 
 function Invoke-Dotnet {
     & dotnet @args

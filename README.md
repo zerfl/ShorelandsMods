@@ -43,7 +43,7 @@ next start. To remove the mods and what they saved too, also delete `mods\`, `mo
 
 ## Making mods
 
-The author guide is [guide/guide.md](guide/guide.md); the release zip has it as `mods\_guide.html`. Start with
+The author guide is online at **https://zerfl.github.io/ShorelandsMods/** (source: [guide/guide.md](guide/guide.md)); the release zip has it as `mods\_guide.html`. Start with
 *Your first mod in ten minutes*. At the first start the game writes `mods\_api.txt` (every function a Lua mod can
 use) and `mods\_names.txt` (every name a picture, sound or cue can replace).
 
@@ -73,7 +73,7 @@ below, or set `SHORELANDS_DIR` instead.
 ```
 dotnet build src -c Release -p:GameDir="C:\Program Files (x86)\Steam\steamapps\common\Shorelands Playtest"
 dotnet run --project tests -c Release -p:GameDir="..."
-powershell -ExecutionPolicy Bypass -File tools\package.ps1 -GameDir "..."
+powershell -ExecutionPolicy Bypass -File tools\release.ps1 -GameDir "..."
 ```
 
 These build `src\bin\Release\ShorelandsMods.dll` (the Lua-CSharp DLLs it needs go to `src\bin\Release\lib`), run
