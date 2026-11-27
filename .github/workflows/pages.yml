@@ -30,7 +30,9 @@ jobs:
         with:
           path: _site
 
+  # GitHub Pages needs a public repository on this account's plan.
   deploy:
+    if: ${{ !github.event.repository.private }}
     needs: build
     runs-on: ubuntu-latest
     environment:
