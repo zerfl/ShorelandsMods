@@ -1,0 +1,8 @@
+<Mod
+  name="Harvest &amp; Tackle icons"
+  description="New icons for six items (pumpkin, leaf, carrot, kelp, hoe, fishing rod with float) and three koi."
+  version="2.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

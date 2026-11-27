@@ -1,0 +1,8 @@
+<Mod
+  name="Harbour Dusk UI"
+  description="A new UI theme: navy panels in brass frames, brass porthole hotbar, dusk-glass slots, sea-foam selection, and a new cursor."
+  version="2.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

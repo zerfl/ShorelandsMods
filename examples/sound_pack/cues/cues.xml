@@ -1,0 +1,13 @@
+<Cues>
+  <!-- hide_native="1": draw this instead of the game's "!"; frames/fps: the PNG is a strip of 4 frames -->
+  <Cue
+    slot="fishing_bite"
+    hide_native="1"
+    anchor="mark"
+    offset_y="0"
+    scale="1"
+    frames="4"
+    fps="8"
+    volume="0.8"
+  />
+</Cues>

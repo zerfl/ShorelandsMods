@@ -1,0 +1,8 @@
+<Mod
+  name="Stream ticker"
+  description="Writes your last item and your currency to two text files that OBS can show on your stream."
+  version="1.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

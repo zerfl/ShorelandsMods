@@ -1,0 +1,8 @@
+<Project>
+  <!-- The game folder (the one that holds Shorelands.exe): -p:GameDir=... or the SHORELANDS_DIR environment variable. -->
+  <PropertyGroup>
+    <GameDir Condition="'$(GameDir)' == ''">$(SHORELANDS_DIR)</GameDir>
+    <GameManaged>$(GameDir)\Shorelands_Data\Managed</GameManaged>
+    <BepInExCore>$(GameDir)\BepInEx\core</BepInExCore>
+  </PropertyGroup>
+</Project>

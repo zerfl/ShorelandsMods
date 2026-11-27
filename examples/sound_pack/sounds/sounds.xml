@@ -1,0 +1,16 @@
+<Sounds>
+  <!-- volume 0..1 (1 = as loud as the file), cooldown: seconds before the same sound plays again -->
+  <Sound name="wallet_gain" volume="0.7" cooldown="0.3" />
+  <Sound name="wallet_loss" volume="0.6" cooldown="0.3" />
+  <Sound name="item_gained" volume="0.7" cooldown="0.15" />
+  <Sound name="whisper" volume="0.8" cooldown="0.5" />
+  <Sound name="chat" volume="0.45" cooldown="1" />
+  <Sound name="zone_town" volume="0.7" cooldown="3" />
+  <Sound name="zone_playerland" volume="0.7" cooldown="3" />
+  <Sound name="zone_holyland" volume="0.7" cooldown="3" />
+  <Sound name="rain_start" volume="0.6" cooldown="5" />
+  <Sound name="rain_stop" volume="0.6" cooldown="5" />
+  <Sound name="rain_loop" volume="0.5" />
+  <Sound name="ui_open" volume="0.5" />
+  <Sound name="ui_close" volume="0.5" />
+</Sounds>

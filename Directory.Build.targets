@@ -1,0 +1,12 @@
+<Project>
+  <Target Name="CheckGameDir" BeforeTargets="ResolveAssemblyReferences">
+    <Error
+      Condition="'$(GameDir)' == ''"
+      Text="The game folder is not set. Pass -p:GameDir=&quot;C:\path\to\Shorelands&quot; or set the SHORELANDS_DIR environment variable."
+    />
+    <Error
+      Condition="!Exists('$(GameManaged)\Game.dll')"
+      Text="No game found in '$(GameDir)': $(GameManaged)\Game.dll does not exist."
+    />
+  </Target>
+</Project>

@@ -1,0 +1,8 @@
+<Mod
+  name="Chat helper"
+  description="Timestamps in chat, your name and words you choose highlighted, and a /stats command that counts the chat of this session."
+  version="1.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

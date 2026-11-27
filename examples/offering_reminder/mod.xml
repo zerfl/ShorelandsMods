@@ -1,0 +1,8 @@
+<Mod
+  name="Offering reminder"
+  description="A countdown for the offering round with a notice when a round starts and shortly before it ends, plus a small weather and daylight line."
+  version="1.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

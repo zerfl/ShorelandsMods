@@ -1,0 +1,8 @@
+<Mod
+  name="Session stats"
+  description="A small panel showing what you earned this session, earned per hour, items gained and your all-time total."
+  version="1.0.0"
+  author="ShorelandsMods examples"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

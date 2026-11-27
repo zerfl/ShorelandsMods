@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Runs the host core (no Unity): manifest, paths, settings, data and export caps, errors, commands, and the Lua
+       sandbox itself (escapes, budgets, dofile confinement) on the same Lua-CSharp DLLs the plugin ships. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <NoWarn>CS1701;CS1702;MSB3277;CS0649</NoWarn>
+    <Pkgs>$(NuGetPackageRoot)</Pkgs>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageDownload Include="LuaCSharp" Version="[0.5.8]" />
+    <PackageDownload Include="Microsoft.Bcl.TimeProvider" Version="[8.0.0]" />
+    <PackageDownload Include="Microsoft.Bcl.AsyncInterfaces" Version="[8.0.0]" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\src\Core\**\*.cs" />
+    <Reference Include="Lua">
+      <HintPath>$(Pkgs)luacsharp\0.5.8\lib\netstandard2.1\Lua.dll</HintPath><Private>true</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.TimeProvider">
+      <HintPath>$(Pkgs)microsoft.bcl.timeprovider\8.0.0\lib\netstandard2.0\Microsoft.Bcl.TimeProvider.dll</HintPath><Private>true</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>$(Pkgs)microsoft.bcl.asyncinterfaces\8.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath><Private>true</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GameManaged)\Newtonsoft.Json.dll</HintPath><Private>true</Private>
+    </Reference>
+    <!-- Only for comparing the host's escape function with the game's; loaded from the game folder at run time. -->
+    <Reference Include="Game">
+      <HintPath>$(GameManaged)\Game.dll</HintPath><Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fixtures\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="ShorelandsMods.Tests.Managed" Value="$(GameManaged)" />
+  </ItemGroup>
+</Project>

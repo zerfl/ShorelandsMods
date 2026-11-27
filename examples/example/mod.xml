@@ -1,0 +1,8 @@
+<Mod
+  name="Example"
+  description="The starter mod: copy this folder to make your own. It shows nothing until you switch on &quot;Show the demo&quot; below. Every callback is in its init.lua, with a comment saying when it runs."
+  version="1.0.0"
+  author="ShorelandsMods"
+  made_for_game="0.69i"
+  needs_host="0.2.0"
+/>

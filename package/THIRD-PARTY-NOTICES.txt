@@ -1,0 +1,14 @@
+ShorelandsMods.dll, the example mods and the guide are under the MIT License (LICENSE.txt next to this file).
+ShorelandsMods bundles these libraries unchanged, as the DLLs published on nuget.org. Their licence texts
+are in the licenses/ folder next to this file.
+
+Lua.dll
+  Lua-CSharp 0.5.8 (NuGet package LuaCSharp 0.5.8), https://github.com/nuskey8/Lua-CSharp
+  Copyright (c) 2025 Yusuke Nakada. MIT License: licenses/Lua-CSharp.LICENSE.txt
+
+Microsoft.Bcl.TimeProvider.dll
+  NuGet package Microsoft.Bcl.TimeProvider 8.0.0, https://github.com/dotnet/runtime
+Microsoft.Bcl.AsyncInterfaces.dll
+  NuGet package Microsoft.Bcl.AsyncInterfaces 8.0.0, https://github.com/dotnet/runtime
+  Copyright (c) .NET Foundation and Contributors. MIT License: licenses/dotnet-runtime.LICENSE.txt
+  The packages' third-party notices: licenses/dotnet-runtime.THIRD-PARTY-NOTICES.txt
